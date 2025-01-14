@@ -13,7 +13,7 @@ def regne_omkrets_areal(a,b):
     halvsirkel_areal = (math.pi * radius ** 2) / 2
     halvsirkel_omkrets = (math.pi * radius + 2) * radius
     areal = round (areal_trekant + halvsirkel_areal, 2)
-    omkrets = round(b + hypotenus + halvsirkel_omkrets, 2)
+    omkrets = round(b + hypotenus + halvsirkel_omkrets - a, 2)
     return(areal, omkrets)
 
 clear5 = "\n" * 5 #legger 5 linjeskift til variabel clear5
